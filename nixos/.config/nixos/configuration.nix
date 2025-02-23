@@ -9,6 +9,8 @@
       inputs.xremap-flake.nixosModules.default
     ];
 
+  programs.starship.enable = true;
+
   # Xremap
   services.xremap = {
     withHypr = true;
