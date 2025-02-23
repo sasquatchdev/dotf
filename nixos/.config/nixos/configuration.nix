@@ -127,6 +127,9 @@
      github-cli
 
      stow
+
+     kitty
+     pkgs.starship
   ];
 
   # Fish
