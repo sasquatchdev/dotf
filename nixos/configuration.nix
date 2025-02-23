@@ -1,12 +1,32 @@
 # NixOS-System Config
 
-{ config, pkgs, ... }:
+{ config, pkgs, inputs, ... }:
 
 {
   imports =
     [
       ./hardware-configuration.nix
+      inputs.xremap-flake.nixosModules.default
     ];
+
+  # Xremap
+  services.xremap = {
+    withHypr = true;
+    userName = "sasquatchdev";
+    yamlConfig = '' 
+      modmap:
+        - name: Cap
+          remap:
+            CapsLock: 
+              held: RightAlt
+              alone: CapsLock
+    '';
+  };
+
+  # Bluetooth
+  hardware.bluetooth.enable = true;
+  hardware.bluetooth.powerOnBoot = true;
+  services.blueman.enable = true;
 
   # GRUB / Bootloader
   boot.loader.grub.enable = true;
