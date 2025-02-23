@@ -27,7 +27,7 @@ personal preference, but i like it that way)
 Finally, you need to run
 
 ```bash
-./sync
+stow .
 ```
 
 which will use GNU stow to automatically sync all dotfiles.
