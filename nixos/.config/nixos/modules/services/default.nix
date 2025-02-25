@@ -4,6 +4,6 @@
     [
       ./starship.nix
       ./xremap.nix
-      ./desktop.nix
+      ./desktop
     ];
 }
