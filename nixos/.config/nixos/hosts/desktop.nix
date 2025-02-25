@@ -10,4 +10,6 @@
       ../modules/system
       ../modules/services
     ];
+
+  networking.hostName = "nix-desktop";
 }

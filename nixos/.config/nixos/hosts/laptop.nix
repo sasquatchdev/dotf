@@ -7,4 +7,6 @@
     [
       ../configuration.nix
     ];
+
+  networking.hostName = "nix-laptop";
 }
