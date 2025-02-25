@@ -1,17 +1,16 @@
-# NixOS-System Config
+# Root Config
 
 { config, pkgs, inputs, ... }:
 
 {
   imports =
     [
-      ./hardware-configuration.nix
       inputs.xremap-flake.nixosModules.default
+      ./hardware-configuration.nix
     ];
 
   programs.starship.enable = true;
 
-  # Xremap
   services.xremap = {
     withHypr = true;
     userName = "sasquatchdev";
@@ -40,7 +39,7 @@
   # Flakes
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
-  networking.hostName = "nixos";
+  networking.hostName = "nix-desktop";
 
   # Networking
   networking.networkmanager.enable = true;

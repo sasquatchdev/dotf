@@ -8,13 +8,25 @@
 
   outputs = { self, nixpkgs, ... } @ inputs :
   let
-    lib = nixpkgs.lib;
+    system = "x86_64-linux";
   in 
   {
-    nixosConfigurations.nixos = lib.nixosSystem {
-      system = "x86_64-linux";
+    nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
+      inherit system;
       specialArgs = { inherit inputs; };
       modules = [ ./configuration.nix ];
+    };
+
+    nixosConfigurations.nix-desktop = nixpkgs.lib.nixosSystem {
+      inherit system;
+      specialArgs = { inherit inputs; };
+      modules = [ ./hosts/desktop.nix ];
+    };  
+
+    nixosConfigurations.nix-laptop = nixpkgs.lib.nixosSystem {
+      inherit system;
+      specialArgs = { inherit inputs; };
+      modules = [ ./hosts/laptop.nix ];
     };  
   };
 }
