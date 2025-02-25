@@ -7,7 +7,7 @@
     [
       ../configuration.nix
       ../modules/packages
-      ../modules/system
+      ../modules/core
       ../modules/services
     ];
 
