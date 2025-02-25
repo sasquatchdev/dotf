@@ -3,6 +3,6 @@
   # !!! ONLY IMPORT ONE !!!
   imports = 
     [
-      ./plasma.nix
+      ./plasma6.nix
     ];
 }
