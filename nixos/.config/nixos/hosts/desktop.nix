@@ -1,7 +1,13 @@
-{ config, ... }:
+# Desktop Host
+# -> Generic
 
+{ ... }:
 {
-  imports = [
-    ../configuration.nix
-  ];
+  imports = 
+    [
+      ../configuration.nix
+      ../modules/packages
+      ../modules/system
+      ../modules/services
+    ];
 }

@@ -1,4 +1,8 @@
 # Root Config
+#
+# It is recommended that you do not directly
+# change this, unless you really know what you're
+# doing.
 
 { config, pkgs, inputs, ... }:
 
@@ -9,58 +13,9 @@
       ./hardware-configuration.nix
     ];
 
-  programs.starship.enable = true;
-
-  services.xremap = {
-    withHypr = true;
-    userName = "sasquatchdev";
-    yamlConfig = '' 
-      modmap:
-        - name: Cap
-          remap:
-            CapsLock: 
-              held: RightAlt
-              alone: CapsLock
-    '';
-  };
-
-  # Bluetooth
-  hardware.bluetooth.enable = true;
-  hardware.bluetooth.powerOnBoot = true;
-  services.blueman.enable = true;
-
-  # GRUB / Bootloader
-  boot.loader.grub.enable = true;
-  boot.loader.grub.device = "/dev/sda";
-  boot.loader.grub.useOSProber = true;
-  boot.loader.grub.efiSupport = true;
-  boot.loader.efi.canTouchEfiVariables = true;
-
-  # Flakes
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
   networking.hostName = "nix-desktop";
-
-  # Networking
-  networking.networkmanager.enable = true;
-
-  # Set your time zone.
-  time.timeZone = "Europe/Berlin";
-
-  # Select internationalisation properties.
-  i18n.defaultLocale = "en_GB.UTF-8";
-
-  i18n.extraLocaleSettings = {
-    LC_ADDRESS = "de_DE.UTF-8";
-    LC_IDENTIFICATION = "de_DE.UTF-8";
-    LC_MEASUREMENT = "de_DE.UTF-8";
-    LC_MONETARY = "de_DE.UTF-8";
-    LC_NAME = "de_DE.UTF-8";
-    LC_NUMERIC = "de_DE.UTF-8";
-    LC_PAPER = "de_DE.UTF-8";
-    LC_TELEPHONE = "de_DE.UTF-8";
-    LC_TIME = "de_DE.UTF-8";
-  };
 
   # Enable the X11 windowing system.
   # You can disable this if you're only using the Wayland session.
