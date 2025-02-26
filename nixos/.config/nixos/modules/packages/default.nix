@@ -24,5 +24,7 @@
 
      kitty
      pkgs.starship
+
+     spotify
   ];
 }
