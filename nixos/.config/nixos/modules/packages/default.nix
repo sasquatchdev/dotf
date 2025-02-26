@@ -5,6 +5,7 @@
       ./firefox.nix
       ./console.nix
       ./fish.nix
+      ./spotify.nix
     ];
 
   # Allow unfree packages

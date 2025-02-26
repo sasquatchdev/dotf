@@ -4,11 +4,7 @@
   inputs = {
     nixpkgs.url = "nixpkgs/nixos-24.11";
     xremap-flake.url = "github:xremap/nix-flake";
-
-    firefox-addons = {
-      url = "gitlab:rycee/nur-expressions?dir=pkgs/firefox-addons";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
+    spicetify-nix.url = "github:Gerg-L/spicetify-nix";
   };
 
   outputs = { self, nixpkgs, ... } @ inputs :
