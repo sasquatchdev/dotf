@@ -12,16 +12,22 @@
     system = "x86_64-linux";
   in 
   {
-    nixosConfigurations.nix-desktop = nixpkgs.lib.nixosSystem {
+    nixosConfigurations.desktop = nixpkgs.lib.nixosSystem {
       inherit system;
       specialArgs = { inherit system inputs; };
       modules = [ ./hosts/desktop.nix ];
     };  
 
-    nixosConfigurations.nix-laptop = nixpkgs.lib.nixosSystem {
+    nixosConfigurations.laptop = nixpkgs.lib.nixosSystem {
       inherit system;
       specialArgs = { inherit system inputs; };
       modules = [ ./hosts/laptop.nix ];
     };  
+
+    nixosConfigurations.wsl = nixpkgs.lib.nixosSystem {
+      inherit system;
+      specialArgs = { inherit system inputs; };
+      modules = [ ./hosts/wsl.nix ];
+    }; 
   };
 }

@@ -6,9 +6,7 @@
   imports = 
     [
       ../configuration.nix
-      ../modules/packages
-      ../modules/core
-      ../modules/services
+      ../modules/interactive
     ];
 
   networking.hostName = "nix-desktop";

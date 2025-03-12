@@ -2,16 +2,11 @@
 {
   imports =
     [
-      ./firefox.nix
-      ./console.nix
-      ./fish.nix
+      inputs.xremap-flake.nixosModules.default
     ];
 
-  # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
   
-  # Packages that do not require any
-  # special installation or configuration
   environment.systemPackages = with pkgs; [
      neovim
      vim
@@ -22,7 +17,7 @@
      stow
 
      kitty
-     pkgs.starship
+     starship
 
      spotify
   ];

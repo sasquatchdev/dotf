@@ -2,7 +2,6 @@
 {
   imports =
     [
-      ./boot.nix
-      ./bluetooth.nix
+      ./locale.nix
     ];
 }

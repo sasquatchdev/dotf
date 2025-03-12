@@ -6,11 +6,9 @@
   imports = 
     [
       ../configuration.nix
-      ../modules/packages
-      ../modules/core
-      ../modules/services
+      ../modules/interactive
 
-      ../modules/system/touchpad.nix
+      ../modules/services/touchpad.nix
     ];
 
   networking.hostName = "nix-laptop";

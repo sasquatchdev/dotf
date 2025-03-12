@@ -1,15 +1,8 @@
-# Global Config
-#
-# It is recommended that you do not directly
-# change this, unless you really know what you're
-# doing.
-
 { config, pkgs, inputs, ... }:
 
 {
   imports =
     [
-      inputs.xremap-flake.nixosModules.default
       ./hardware-configuration.nix
     ];
 
@@ -24,5 +17,4 @@
   };
 
   system.stateVersion = "24.11";
-
 }
