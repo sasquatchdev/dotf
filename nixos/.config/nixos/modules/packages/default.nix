@@ -1,10 +1,5 @@
-{ pkgs, inputs, ... }:
+{ pkgs, ... }:
 {
-  imports =
-    [
-      inputs.xremap-flake.nixosModules.default
-    ];
-
   nixpkgs.config.allowUnfree = true;
   
   environment.systemPackages = with pkgs; [
