@@ -3,7 +3,7 @@
   imports = 
     [
       ../configuration.nix
-      ../modules/headless
+      ../modules/headless.nix
       
       <nixos-wsl/modules>
     ];
