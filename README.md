@@ -5,6 +5,9 @@ everything from github to nixos.
 
 ## installation
 
+> [!Note]
+> installation for the `vscode` submodule is different. See 
+
 To download and install my dotfiles you want to have
 all the prerequisites already installed. Next, run
 
