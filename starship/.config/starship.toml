@@ -1,1 +1,8 @@
-format = """$character"""
+# get editor auto-completions
+"$schema" = 'https://starship.rs/config-schema.json'
+
+add_newline = true
+
+[character]
+success_symbol = "[➜](bold green)"
+error_symbol = "[➜](bold red)"
