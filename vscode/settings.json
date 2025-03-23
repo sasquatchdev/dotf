@@ -1,142 +1,151 @@
 {
-    "workbench.sideBar.location": "right",
-  
-    "workbench.colorTheme": "Aura Dracula Spirit (Soft)",
-    "workbench.iconTheme": "material-icon-theme",
-    "material-icon-theme.hidesExplorerArrows": true,
-    "explorer.compactFolders": false,
-  
-    "workbench.activityBar.location": "hidden",
-    "workbench.editor.showTabs": "single",
-    "workbench.statusBar.visible": false,
-  
-    "workbench.startupEditor": "none",
-    "workbench.tips.enabled": false,
-  
-    "workbench.tree.enableStickyScroll": false,
-    "workbench.tree.renderIndentGuides": "always",
-    "workbench.tree.indent": 16,
-  
-    "editor.minimap.enabled": false,
-    "breadcrumbs.enabled": false,
-    "explorer.confirmDragAndDrop": false,
-    "explorer.confirmDelete": false,
-  
-    "editor.renderLineHighlight": "line",
-  
-    "editor.fontFamily": "JetBrainsMono Nerd Font Mono",
-    "editor.fontSize": 14,
-    "editor.fontLigatures": true,
-    "editor.lineHeight": 1.75,
-  
-    "custom-ui-style.font.sansSerif": "JetBrainsMono Nerd Font Propo",
-  
-    "explorer.decorations.badges": false,
-    "git.decorations.enabled": false,
-    "window.zoomLevel": 0.5,
-    "window.titleBarStyle": "custom",
-  
-    "editor.smoothScrolling": true,
-    "editor.cursorBlinking": "expand",
-    "editor.cursorSmoothCaretAnimation": "on",
-  
-    "custom-ui-style.electron": {
-      "titleBarStyle": "hiddenInset"
-    },
-  
-    "custom-ui-style.stylesheet": {
-      ".quick-input-widget.show-file-icons": "box-shadow: none !important",
-      ".quick-input-widget": "top: 25vh !important",
-      ".quick-input-widget .scrollbar": "display: none !important",
-      ".sidebar .title-label": "padding: 0 !important",
-      ".sidebar": "border: none !important",
-      ".editor-group-container": "border: none !important",
-      ".monaco-workbench .monaco-list:not(.element-focused):focus:before": "outline: none !important",
-      ".monaco-workbench .monaco-list:not(.element-focused):focus": "outline: none !important",
-      ".monaco-list-row.focused": "outline: none !important",
-      ".monaco-.editor .scroll-decoration": "display: none !important",
-      ".title-actions": "display: none !important"
-    },
-  
-    "editor.multiCursorModifier": "ctrlCmd",
-    "editor.wordWrap": "off",
-    "editor.cursorStyle": "line",
-  
-    "editor.tokenColorCustomizations": {
-      "textMateRules": [
-        {
-          "scope": "comment",
-          "settings": {
-            "fontStyle": "italic bold"
-          }
-        },
-        {
-          "scope": "keyword",
-          "settings": {
-            "fontStyle": "bold"
-          }
-        },
-        {
-          "scope": "variable",
-          "settings": {
-            "fontStyle": "italic"
-          }
-        },
-        {
-          "scope": "entity.name.function",
-          "settings": {
-            "fontStyle": "italic"
-          }
+  "workbench.sideBar.location": "right",
+
+  "workbench.colorTheme": "Aura Dracula Spirit (Soft)",
+  "workbench.iconTheme": "material-icon-theme",
+  "material-icon-theme.hidesExplorerArrows": true,
+  "explorer.compactFolders": false,
+
+  "workbench.activityBar.location": "hidden",
+  "workbench.editor.showTabs": "single",
+  "workbench.statusBar.visible": false,
+
+  "workbench.startupEditor": "none",
+  "workbench.tips.enabled": false,
+
+  "workbench.tree.enableStickyScroll": false,
+  "workbench.tree.renderIndentGuides": "always",
+  "workbench.tree.indent": 16,
+
+  "editor.minimap.enabled": false,
+  "breadcrumbs.enabled": false,
+  "explorer.confirmDragAndDrop": false,
+  "explorer.confirmDelete": false,
+
+  "editor.renderLineHighlight": "line",
+
+  "editor.fontFamily": "JetBrainsMono Nerd Font Mono",
+  "editor.fontSize": 14,
+  "editor.fontLigatures": true,
+  "editor.lineHeight": 1.75,
+
+  "custom-ui-style.font.sansSerif": "JetBrainsMono Nerd Font Propo",
+
+  "explorer.decorations.badges": false,
+  "git.decorations.enabled": false,
+  "window.zoomLevel": 0.5,
+  "window.titleBarStyle": "custom",
+
+  "editor.smoothScrolling": true,
+  "editor.cursorBlinking": "expand",
+  "editor.cursorSmoothCaretAnimation": "on",
+
+  "custom-ui-style.electron": {
+    "titleBarStyle": "hiddenInset"
+  },
+
+  "custom-ui-style.stylesheet": {
+    ".quick-input-widget.show-file-icons": "box-shadow: none !important",
+    ".quick-input-widget": "top: 25vh !important",
+    ".quick-input-widget .scrollbar": "display: none !important",
+    ".sidebar .title-label": "padding: 0 !important",
+    ".sidebar": "border: none !important",
+    ".editor-group-container": "border: none !important",
+    ".monaco-workbench .monaco-list:not(.element-focused):focus:before": "outline: none !important",
+    ".monaco-workbench .monaco-list:not(.element-focused):focus": "outline: none !important",
+    ".monaco-list-row.focused": "outline: none !important",
+    ".monaco-.editor .scroll-decoration": "display: none !important",
+    ".title-actions": "display: none !important"
+  },
+
+  "editor.multiCursorModifier": "ctrlCmd",
+  "editor.wordWrap": "off",
+  "editor.cursorStyle": "line",
+
+  "editor.tokenColorCustomizations": {
+    "textMateRules": [
+      {
+        "scope": "comment",
+        "settings": {
+          "fontStyle": "italic bold"
         }
+      },
+      {
+        "scope": "keyword",
+        "settings": {
+          "fontStyle": "bold"
+        }
+      },
+      {
+        "scope": "variable",
+        "settings": {
+          "fontStyle": "italic"
+        }
+      },
+      {
+        "scope": "entity.name.function",
+        "settings": {
+          "fontStyle": "italic"
+        }
+      }
+    ]
+  },
+
+  "editor.colorDecorators": false,
+  "editor.codeLens": true,
+  "editor.links": false,
+  "editor.matchBrackets": "never",
+  "editor.parameterHints.enabled": true,
+  "editor.parameterHints.cycle": false,
+  "editor.lightbulb.enabled": "off",
+  "files.insertFinalNewline": true,
+  "scm.diffDecorations": "gutter",
+
+  "editor.lineNumbers": "interval",
+  "editor.tabSize": 4,
+  "editor.showFoldingControls": "mouseover",
+  "editor.guides.indentation": false,
+  "editor.renderWhitespace": "none",
+  "editor.occurrencesHighlight": "off",
+  "editor.selectionHighlight": false,
+  "editor.scrollbar.horizontal": "hidden",
+  "editor.scrollbar.vertical": "hidden",
+  "editor.overviewRulerBorder": false,
+
+  "editor.stickyScroll.enabled": false,
+  "editor.stickyTabStops": false,
+  "editor.hideCursorInOverviewRuler": true,
+  "editor.tabCompletion": "on",
+  "editor.quickSuggestions": {
+    "other": "off",
+    "comments": "off",
+    "strings": "off"
+  },
+  "editor.suggestOnTriggerCharacters": false,
+  "editor.snippetSuggestions": "top",
+  "emmet.triggerExpansionOnTab": true,
+
+  "workbench.colorCustomizations": {
+    "[Aura Dracula Spirit (Soft)]": {}
+  },
+
+  "files.autoSave": "afterDelay",
+  "update.mode": "none",
+  "extensions.ignoreRecommendations": true,
+
+  "material-icon-theme.folders.associations": {
+    "eval": "delta"
+  },
+  "editor.foldingHighlight": false,
+  "editor.foldingImportsByDefault": true,
+
+  "terminal.integrated.automationProfile.osx": {
+    "fish": {
+      "path": "/usr/bin/fish",
+      "args": [
+        "-l"
       ]
-    },
-  
-    "editor.colorDecorators": false,
-    "editor.codeLens": true,
-    "editor.links": false,
-    "editor.matchBrackets": "never",
-    "editor.parameterHints.enabled": true,
-    "editor.parameterHints.cycle": false,
-    "editor.lightbulb.enabled": "off",
-    "files.insertFinalNewline": true,
-    "scm.diffDecorations": "gutter",
-  
-    "editor.lineNumbers": "interval",
-    "editor.tabSize": 4,
-    "editor.showFoldingControls": "mouseover",
-    "editor.guides.indentation": false,
-    "editor.renderWhitespace": "none",
-    "editor.occurrencesHighlight": "off",
-    "editor.selectionHighlight": false,
-    "editor.scrollbar.horizontal": "hidden",
-    "editor.scrollbar.vertical": "hidden",
-    "editor.overviewRulerBorder": false,
-  
-    "editor.stickyScroll.enabled": false,
-    "editor.stickyTabStops": false,
-    "editor.hideCursorInOverviewRuler": true,
-    "editor.tabCompletion": "on",
-    "editor.quickSuggestions": {
-      "other": "off",
-      "comments": "off",
-      "strings": "off"
-    },
-    "editor.suggestOnTriggerCharacters": false,
-    "editor.snippetSuggestions": "top",
-    "emmet.triggerExpansionOnTab": true,
-  
-    "workbench.colorCustomizations": {
-      "[Aura Dracula Spirit (Soft)]": {}
-    },
-  
-    "files.autoSave": "afterDelay",
-    "update.mode": "none",
-    "extensions.ignoreRecommendations": true,
-  
-    "material-icon-theme.folders.associations": {
-      "eval": "delta"
-    },
-    "editor.foldingHighlight": false,
-    "editor.foldingImportsByDefault": true
-  }
-  
+    }
+  },
+  "terminal.integrated.defaultProfile.linux": "fish"
+}
