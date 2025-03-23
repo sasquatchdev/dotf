@@ -4,3 +4,5 @@ end
 
 abbr -a -- sude sudo -E
 abbr -a -- nixr sudo nixos-rebuild --flake "$(readlink -f ~/.config/nixos)" switch
+
+starship init fish | source
